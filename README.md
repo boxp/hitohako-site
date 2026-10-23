@@ -8,7 +8,7 @@
 ## Stack
 
 - [Astro](https://astro.build) 7 + [Tailwind CSS](https://tailwindcss.com) 4
-- Node 22
+- Node 24（Astro 7 は Node 22.23.4 以上が必要）
 - Cloudflare Pages（プロジェクト名 `boxp-hitohako`、`hitohako.b0xp.io`）
 
 ## Commands
