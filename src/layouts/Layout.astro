@@ -11,6 +11,9 @@ const {
   description =
     'ひとはこさん（VTuber）のポートフォリオサイト。プロフィール・仲間・STG 1CC 記録・リンク。和風 × 90年代レトロゲーム風。',
 } = Astro.props;
+
+const siteUrl = Astro.site?.toString() ?? 'https://hitohako.b0xp.io/';
+const ogImage = new URL('/pixel/hitohako-face.png', siteUrl).toString();
 ---
 
 <!doctype html>
@@ -23,8 +26,8 @@ const {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.site?.toString() ?? 'https://hitohako.b0xp.io'} />
-    <meta property="og:image" content="/pixel/hitohako-face.png" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:image" content={ogImage} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
